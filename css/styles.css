@@ -104,7 +104,7 @@ h1{text-align: center;
    
 
 }
-.container{background-image: url("https://cdn.pixabay.com/photo/2018/03/07/18/42/menu-3206749__340.jpg")no-repeat center center/cover;
+.container{background-image: url("")"
 
 
 }
@@ -150,4 +150,13 @@ h1{text-align: center;
 ol{text-align: center;
 
 }
- h3{text-align: center;}
+ h3{text-align: center;
+
+}
+
+.list{background-image: url("https://image.freepik.com/free-photo/italian-pizza-pizza-cooking-ingredients-dark-background_179369-231.jpg")no repeat center center fixed;
+
+    
+      font-size: x-large;
+      
+}

@@ -7,8 +7,10 @@
     <title>pizza grill</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"rel="stylesheet"type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"rel="stylesheet"type="text/css">
+
     <link href="css/styles.css"rel ="stylesheet"type="text/css">
-    <script src ="js/scripts.js"async></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src ="js/scripts.js"></script>
     
 </head>   
 <body>
@@ -29,7 +31,7 @@
       <section id="home">
           <h1 class="h-primary center">Welcome to pizza grill</h1>
 
-          <button class="btn">order now</button>
+          <button class="btn">Order now</button>
       </section>
     </div>  
     <br/>
@@ -67,49 +69,50 @@
     </div>          
     <div class="Order">
         <h1>Order Here</h1>
-        <div class="cards">
-            <div class="card">
-                <p>Choose pizza size</p>
-                <input type="radio"name="pizza size"/>Large=1200
-                <input type="radio"name="pizza size"/>medium=900
-                <input type="radio"name="pizza size"/>Small=500
-            </div>
-            <div class="card">
-                <p>Choose any crust</p>
-                <input type="radio"name="crust"/>Stuffed crust
-                <input type="radio"name="crust "/>Extra cheese
-                <input type="radio"name="crust "/>Whole wheat
-            </div>
-            <div class="card">
-                <p>Choose toping</p>
-                <input type="radio"name="topping"/>Pineapple
-                <input type="radio"name="topping"/>Ham
-                <input type="radio"name="topping"/>Pepperoni
-            </div>
-            <div class="card">
-                <p>Choose toping</p>
-                <input type="radio"name="topping-size"/>large=200
-                <input type="radio"name="topping-size"/>medium=150
-                <input type="radio"name="topping-size"/> small=100
-            </div>
-            <div class="form">
-                <h3>Quantity</h3>
-                <label for="Quantity of pizza"></label>
-                <input type="number"name="quantity of pizza">
-            </div>
-
-        </div>
+            <form id="form" action="">
+                <P><strong>Place your orders below </strong></P>
+                <label>Pizza size</label>
+                 <select name="size" class="input" id="size">
+                   <option value="small">Small</option>
+                   <option value="medium">Medium</option>
+                   <option value="large">Large</option>
+                 </select><br><br><br>
           
-
-    </div>
-
+                <label>Pizza crust</label>
+                 <select name="crust" class="input" id="crust">
+                   <option value="extra cheese">extra cheese</option>
+                   <option value="stuffed">Stuffed</option>
+                   <option value="whole wheat">whole wheat</option>
+                 </select><br><br><br>
+          
+                <label>Pizza toppings</label>
+                <select name="toppings" id="toppings">
+                   <option value="ham">ham</option>
+                   <option value="pepperoni">pepperoni</option>
+                   <option value="pineapple">pineapple</option>
+                </select>
+                 <br/>
+          
+                 Delivery:<br>
+                 <select id="delivery-option">
+                    <option value="1">Delivery</option>
+                    <option value="2">No Delivery</option>
+                </select><br><br><br><br>
+                <label>Quantity</label>
+                <input type="number" class="input" value="1" id="quantity">
+                <button type="submit" class="btn btn-danger" id="order">Submit</button>
+              </form>
+            </div>    
 
 
         
-            </div>
-        </div>
-    </section>
+        
+    </div>
 
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <link src="js/script.js"rel="stylesheet"type="text/js">
 </body>
 </html>
